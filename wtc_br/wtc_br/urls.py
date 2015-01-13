@@ -10,5 +10,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$',views.fetch_random_message),
-    url(r'^(?P<id>\d+)/$', views.fetch_message),
+    url(r'^(?P<id>\w+)/$', views.fetch_message),
 )
