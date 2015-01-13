@@ -22,4 +22,4 @@ class CommitMessage(models.Model):
 
     @classmethod
     def fetch_message(cls, identifier):
-        message = cls.objects.get(identifier=identifier)
+        return cls.objects.get(identifier=identifier)
